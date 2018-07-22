@@ -16,12 +16,6 @@ macro(build_module module)
 	
 	# build lib
 	add_library(${module} ${src})
-	
-	if(NOT(DEFINED UNIT_TEST))
-		# link this lib to the game
-		target_link_libraries(vector3d ${module})
-	endif()
-	
 endmacro(build_module)
 
 # build all modules
@@ -34,7 +28,3 @@ endmacro(build_module)
 #add_dependencies(viewer		engine)
 #add_dependencies(viewer		parser)
 
-if (DEFINED UNIT_TEST)
-	# build modules only after depending modules' tests were successful
-	#add_dependencies(engine	engine_test)
-endif()

@@ -4,3 +4,6 @@
 [submodule "extlibs/sfml"]
 	path = extlibs/sfml
 	url = git://github.com/sfml/sfml
+[submodule "extlibs/thor"]
+	path = extlibs/thor
+	url = git://github.com/Bromeon/Thor
