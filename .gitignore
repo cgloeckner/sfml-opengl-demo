@@ -1,3 +1,8 @@
+build-debug
+build-release
+build-test
+
+
 # Prerequisites
 *.d
 
